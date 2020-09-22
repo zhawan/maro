@@ -9,10 +9,10 @@ import numpy as np
 from maro.simulator import Env
 from maro.rl import AgentMode, SimpleActor, ActorWorker, KStepExperienceShaper, TwoPhaseLinearExplorer
 from maro.utils import convert_dottable
-from examples.ecr.dqn.components.state_shaper import ECRStateShaper
-from examples.ecr.dqn.components.action_shaper import ECRActionShaper
-from examples.ecr.dqn.components.experience_shaper import TruncatedExperienceShaper
-from examples.ecr.dqn.components.agent_manager import DQNAgentManager
+from state_shaper import ECRStateShaper
+from action_shaper import ECRActionShaper
+from experience_shaper import TruncatedExperienceShaper
+from agent_manager import DQNAgentManager
 
 
 with io.open("config.yml", "r") as in_file:

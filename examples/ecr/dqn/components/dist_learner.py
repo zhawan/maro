@@ -7,9 +7,9 @@ import yaml
 
 from maro.simulator import Env
 from maro.rl import ActorProxy, SimpleLearner, AgentMode, TwoPhaseLinearExplorer
-from examples.ecr.dqn.components.state_shaper import ECRStateShaper
+from state_shaper import ECRStateShaper
 from maro.utils import Logger, convert_dottable
-from examples.ecr.dqn.components.agent_manager import DQNAgentManager
+from agent_manager import DQNAgentManager
 
 
 with io.open("config.yml", "r") as in_file:

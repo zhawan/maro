@@ -9,7 +9,7 @@ from torch.optim import RMSprop
 
 from maro.rl import AbsAgentManager, LearningModel, MLPDecisionLayers, DQN, DQNHyperParams, ColumnBasedStore
 from maro.utils import convert_dottable, set_seeds
-from .agent import ECRAgent
+from agent import ECRAgent
 
 
 with io.open("config.yml", "r") as in_file:
